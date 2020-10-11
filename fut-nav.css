@@ -1,0 +1,112 @@
+.navegacion{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background:#ffe2c3;
+    color:#c5a011;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navegacion ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navegacion ul li a{
+    color:#c5a011;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+}
+
+.navegacion ul li a:hover {
+    background: white;
+}
+
+.navegacion img{
+    margin-left: 20px;   
+}
+footer {
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: start;
+    align-items: start;
+    background-color: #ffe2c3;
+    color: #c5a011;   
+}
+
+.footer-contenedor .footer-columna{
+    margin: 15px;
+    display: grid;    
+}
+
+.footer-contenedor .footer-columna h3{
+	font-size: 32px;
+	color: #c5a011;
+    margin-bottom: 20px;
+}
+
+.footer-contenedor .footer-columna p{
+	margin-bottom: 25px;
+}
+
+.footer-contenedor .footer-columna img{
+    width: 35px;
+}
+
+.footer-contenedor .footer-columna iframe {
+	width: 100%;
+	border: 5px solid #c5a011;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.footer-copy-contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+@media(max-width: 800px){
+    
+    .footer-contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 325px 250px;
+        justify-items: center;
+        align-items: start;
+    }
+}
+
+@media(max-width: 1000px){
+
+    
+    .navegacion{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        color:#c5a011;
+        padding: 5px;
+        position: sticky;
+        top: 0;   
+    }
+    
+
+}
